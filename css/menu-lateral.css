@@ -1,1 +1,80 @@
+        .menu-lateral {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: -15px;
+            left: 0;
+            background-color: #F68721;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 20px;
+        }
 
+        .conteudo-principal {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .menu-lateral .menu-item {
+            padding: 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu-lateral .menu-item:hover {
+            background-color: darkorange;
+        }
+        .logo{
+            height: 120px;
+            margin-top: 90px;
+            width: 195px;
+        }
+        .menu-lateral ul{
+            list-style-type: none;
+            position: absolute;
+            box-sizing: border-box;
+        }
+        .itens{
+            height: 30px;
+            
+
+        }
+        .circle{
+            height: 60px;
+            width: 60px;
+            border-radius: 500px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition:all ease-in-out 0.5s;
+            box-shadow: 4px 4px 8px rgba(67, 33, 131, 0.219);
+             
+        }
+        .circle img{
+            position: absolute;
+            left: 55px;
+            filter: contrast(-5);
+        }
+     
+        a{
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            justify-content: start;
+            margin-top: 13px;
+        }
+        span{
+            margin-left: 70px;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 50px;
+        }
+        a:hover .circle{
+           width: 500px;
+        }
+        a:hover{
+            color: black;
+        }
