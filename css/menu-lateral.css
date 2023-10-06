@@ -1,6 +1,6 @@
-        .menu-lateral {
+               .menu-lateral {
             width: 250px;
-            height: 100%;
+            height: 200%;
             position: fixed;
             top: -15px;
             left: 0;
@@ -26,8 +26,8 @@
             background-color: darkorange;
         }
         .logo{
-            height: 120px;
-            margin-top: 90px;
+            height: 110px;
+            margin-top: 80px;
             width: 195px;
         }
         .menu-lateral ul{
@@ -44,7 +44,7 @@
             height: 60px;
             width: 60px;
             border-radius: 500px;
-            background-color: white;
+            background-color: #B116A247;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -66,15 +66,50 @@
             justify-content: start;
             margin-top: 13px;
         }
+        
         span{
             margin-left: 70px;
             font-size: 1.2rem;
             position: absolute;
             left: 50px;
         }
+
         a:hover .circle{
            width: 500px;
         }
+
         a:hover{
             color: black;
+        }
+
+        .circle-home{
+            height: 60px;
+            width: 60px;
+            border-radius: 500px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            transition:all ease-in-out 0.5s;
+            box-shadow: 4px 4px 8px rgba(67, 33, 131, 0.219);
+        }
+
+        .circle-home span,
+        a span {
+            font-size: 1.3rem;
+        }
+
+        a:hover .circle, .circle-home:hover {
+           width: 400px;
+        }
+
+        .circle-home img {
+            margin-left: 15px;
+        }
+
+        .home-recursos img{
+            margin-left: 2px;
+        }
+
+        .home-carteira img{
+            left: 53px;
         }
