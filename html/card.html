@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="/css/card.css">
+</head>
+<body>
+    <section>
+    <h1 class="Saldações">Olá <span id="Usuario">usuário</span>, bem vindo de volta!</h1>
+    <h1 class="MinhaCarteira">Minha Carteira</h1>
+    <div class="cards">
+       
+    <div class="card margem" id="card">
+        <h2 class="TituloCard">Saldo:</h2>
+        <div class="centralizar sumir" id="saldo">R$00.00</div>
+        <div class="bar sumir" id="bar1"></div>
+        <div class="barra-lateral frente" onclick="Esconder()"></div>
+        <div class="barra-lateral fundo"></div>
+    </div>
+    <div class="card" id="card2">
+        <h2 class="TituloCard">Limite:</h2>
+        <div class="centralizar sumir2" id="limite">R$00.00</div>
+        <div class="bar sumir2" id="bar2"></div>
+        <div class="barra-lateral frente" onclick="Esconder2()"></div>
+        <div class="barra-lateral fundo"></div>
+    </div>
+    </div>
+    </section>
+
+
+
+    <!--Somente para testes,não estará no projeto-->
+    <input name="valorinput" type="number" class="valor" id="valorSaldo" placeholder="saldo"oninput="atualizarSaldo()">
+    <input name="valorinput"type="number" class="valor" id="valorlimite" placeholder="limite"oninput="atualizarLimite()">
+    <input type="text" id="NomeUsuario" oninput="atualizarNome()" placeholder="nome">
+
+</div>
+<script src="/javascript/card.js"></script>
+</body>
+</html>
