@@ -1,12 +1,15 @@
 body {
   background-image: url(../imagens/FUNDO\ TELA.png);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow: hidden;
 }
 
 .cadastro {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+
 }
 .cadastro1 {
   margin-top: 10px;
