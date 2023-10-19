@@ -1,33 +1,37 @@
 
 body {
     margin: 0;
+    overflow: hidden;
+    background-color: #e0c265;
 }
 
 .area-total {
-    display: grid;
-    justify-content: end;
+    display: flex;
+    justify-content:center;
     height: 100vh;
+    align-items: center;
 }
+
 
 .area-amarela {
     background-color: #FFD143;
-    height: 100vh;
+    height: 90vh;
     width: 555px;
     display: flex;
-    justify-content: end;
-    align-items: end;
-    border-top-left-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55px;
     box-shadow: -1px 0px 40px black;
 }
 
 .area-laranja {
     background-color: #FF993A;
-    height: 97.8vh;
+    height: 85.8vh;
     width: 524px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 55px;
+    border-radius: 55px;
 
 }
 
@@ -60,8 +64,22 @@ input {
     border-bottom: solid;
     border-width: 1px;
     width: 300px;
+    background-color:#F1F2F3 ;
+    
 }
-
+#textPassword{
+    display: flex;
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+}
+#textEmail{
+    color: red;
+}
+#textForm{
+    padding-top: 10px;
+    color: red;
+}
 .botao {
     height: 41.19px;
     width: 264.41px;
@@ -70,6 +88,13 @@ input {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
+
+}
+.botao:hover{
+    background-color: #FF993A;
+    transition: 200ms;
+    border-radius: 5px;
+    color: white;
 }
 .links{
     text-decoration: none;
@@ -79,5 +104,8 @@ input {
     align-items: center;
     justify-content: center;
     
-
+    
+}
+.links:hover{
+    text-decoration: underline;
 }

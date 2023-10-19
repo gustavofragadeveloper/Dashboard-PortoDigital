@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fin Bank</title>
     <link rel="stylesheet" href="../css/style-login.css">
+    
 </head>
 
 <body>
     <section class="area-total">
+       
         <div class="area-amarela">
             <div class="area-laranja">
                 <div class="area-login">
@@ -17,9 +19,12 @@
                         <img src="../imagens/Logo-banco.png" alt="">
                     </div>
                     <form action="">
-                        <input type="text" placeholder="Email ou Cpf">
-                        <input type="password" placeholder="Senha">
-                        <button type="button" onclick="validar_login()" class="botao">Entrar</button>
+                        <input type="text" placeholder="Email ou Cpf" id="email">
+                        <small id="textEmail"></small>
+                        <input type="password" placeholder="Senha" id="password">
+                        <small id="textPassword"></small>
+                        <button type="submit" class="botao">Entrar</button>
+                        <small id="textForm"></small>
                     </form>
                     <div class="area-link">
                         <a href="" class="links">
