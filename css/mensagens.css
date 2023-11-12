@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: white;
+}
+.barravertical {
+    width: 2px;
+    height: 595px;
+    left: 238px;
+    top: 0px;
+    position: absolute;
+    background: #F0F0F0;
+}
+
+.menu {
+    width: 148px;
+    height: 281px;
+    left: 44px;
+    top: 176px;
+    position: absolute;
+}
+
+.home, .carteira, .recursos, .ajustes {
+    color: #BDBDBD;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 600;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+.mensagens {
+    color: #369FFF;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 600;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+.menuitem {
+    font-size: 14px;
+    font-family: Arial;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menuitem a:hover {
+    color: #369FFF;
+}
+
+.icone {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.logo1 {
+    width: 153px;
+    height: 152px;
+    left: 35px;
+    top: 5px;
+    position: absolute;
+}
+
+.infousuario {
+    height: 60px;
+    left: 1650px;
+    top: 1px;
+    position: absolute;
+    padding-right: 15px;
+}
+
+.fundoinfouser {
+    width: 243px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    opacity: 0.10;
+    background: #369FFF;
+    border-radius: 16px;
+}
+
+.fotousuario {
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.nomeusuario {
+    left: 65px;
+    top: 10px;
+    position: absolute;
+    color: #303030;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+.titulo {
+    margin-top: 27px;
+    text-align: left;
+    padding-left: 300px;
+    color: #303030;
+    font-size: 30px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+#landbot-chat {
+    padding-bottom: 2%;
+    position: absolute;
+    top: 100px;
+    left: 270px;
+}
+
+
