@@ -34,9 +34,13 @@ body {
     border-radius: 55px;
 
 }
+img{
+    height: 200px;
+    width: auto;
+}
 
 .area-login {
-    height: 653px;
+    height: 80vh;
     width: 457px;
     ;
     border-radius: 21px;
