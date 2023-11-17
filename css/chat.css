@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap');
+.titulo{
+    position: absolute;
+    margin-left: 250px;
+    top: 50px;
+    font-size: 1.5rem;
+    font-family: 'Manrope',sans-serif;
+}
+#landbot-chat {
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    height: 500px;
+    width: 165vh;
+}
+.tituloopcoes{
+    font-family: 'Manrope';
+    font-size: 20px;
+    text-align: center;
+    color: #303030;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.topicos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.fundoopcao {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    height: 65px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.textoopcao {
+    text-decoration: none;
+    text-align:justify;
+    color: #303030;
+    font-size: 17px;
+    font-family: 'Manrope';
+    font-weight: 600;
+    height: auto;
+}
+.textoopcao:hover {
+    color: #369FFF;
+}
+.opcoes-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.titulo-opcoes-container:first-child {
+    margin-left: 250px;
+}

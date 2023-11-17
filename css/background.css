@@ -1,0 +1,98 @@
+.background{
+    width: 100%;
+    height: 100%;
+
+}
+.bola{
+    opacity: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 500px;
+    background-color: orangered;
+    overflow: hidden;
+    box-shadow: 4px 4px 8px rgba(117, 26, 145, 0.329);
+    z-index: -1;
+}
+.InCircle{
+    height: 92%;
+    width: 92%;
+    border-radius: 800px;
+    background-color: orange;
+    
+}
+.rotate{
+    transform: rotate(-15deg);
+}
+.rotate1{
+    transform: rotate(-90deg);
+}
+.rotate2{
+    transform: rotate(90deg);
+}
+.rotate3{
+    transform: rotate(45deg);
+}
+.rotate4{
+    transform: rotate(90deg);
+}
+.size{
+    height: 500px;
+    width: 500px;
+    transition: all 0.5s;
+}
+.size1{
+    height: 200px;
+    width: 200px;
+}
+.size2{
+    height: 80px;
+    width: 80px;
+}
+.size3{
+    height: 250px;
+    width: 250px;
+}
+.size4{
+    height: 250px;
+    width: 250px;
+}
+.size5{
+    height: 95px;
+    width: 95px;
+}
+.position{
+    position: absolute;
+    left:-50px;
+    top:-100px;
+}
+.position2{
+    position: absolute;
+    right: 2px;
+    bottom: 70%;
+}
+.position3{
+    position: absolute;
+    left: 30%;
+    bottom: 25%;
+}
+.position4{
+    position: absolute;
+    left: 53%;
+    bottom: -5%;
+}
+.position5{
+    position: absolute;
+    top: 20%;
+    right: 15%;
+}
+.position6{
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+}
+@media  screen and (max-width:780px){
+    .size{
+        height: 500px;
+        width: 500px;
+    }
+}

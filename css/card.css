@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap');
+        
+        
+        /*Introdução */
+        .Saldações{
+            display: flex;
+            font-size: 18px;
+            font-weight: medium;
+            margin-top:50px;
+            font-family: 'Manrope', sans-serif;
+            color: #369FFF;
+            margin-left: 20px;
+        }
+        .MinhaCarteira{
+            display: flex;
+            font-family: 'Manrope', sans-serif;
+            letter-spacing: 2px;
+            font-size:30px;
+            font-weight:bold;
+            margin-left:20px;
+        }
+        #Usuario{
+            margin-left: 5px;
+        }        
+
+        /*Disposição dos cards na página*/
+        .margem{
+            margin-left: 27px;
+        }
+        .margem1{
+            margin-left: 17px;
+        }
+        .cards{
+            
+            display: flex;
+            font-family: 'Manrope', sans-serif;
+            margin-top: 40px;
+        }
+        .card{
+            letter-spacing: 0.5px;
+            height: 146px;
+            width: 235px;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            box-shadow: 4px 4px 4px #6556c733,11%;
+            box-shadow:8px 8px 40px #6d6cbf5e;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /*Conteúdo dentro dos cards*/
+        #valorSaldo{
+            width: 50px;
+        }
+        #valorlimite{
+            width: 50px;
+        }
+        #NomeUsuario{
+            width: 50px;
+        }
+        
+        .TituloCard{
+            display: flex;
+            font-size: 20px;
+            font-weight:bold;
+            margin-top: 10px;
+            margin-left: 14px;
+            color: #303030;
+        }
+        .centralizar{
+            text-align: center;
+        }
+        .bar{
+            height: 1px;
+            background-color: #FF993A;
+            border-radius: 20px;
+            margin-left:auto ;
+            margin-right:auto ;
+            width: 201px;
+        }
+        .barra-lateral{
+            position: absolute;
+            bottom: 0;
+            right: -40px;
+            box-sizing: border-box;
+            width: 80px;
+            height: 30px;
+            transform: rotate(-45deg);
+            background-color: rgb(246, 135, 33);
+        }
+        .fundo{
+            width: 90px;
+            background: #F64721;
+            z-index: 1;
+        }
+        .frente{
+            z-index: 2;
+            cursor: pointer;
+        }
+
+
+        /* Valores dos cards */
+        #saldo{
+            font-size: 24px;
+            font-weight: bold;
+            margin: 5px;
+            margin-top: 20px;
+            transition: font-size 0.5s ease;
+        }
+        #limite{
+            font-size: 24px;
+            font-weight: bold;
+            margin: 5px;
+            margin-top: 20px;
+            transition: font-size 0.5s ease;
+        }
+       

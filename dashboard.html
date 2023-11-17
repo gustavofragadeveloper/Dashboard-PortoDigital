@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css" media="screen" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/background.css">
+    <link rel="stylesheet" href="/css/chat.css">
+</head>
+<body>
+    <script src="/JS/estilo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div class="menu-lateral" style="overflow: hidden;z-index: 2;" id="latbar">
+        <img src="../imagens/Logo-banco.png" alt="" class="logo">
+        <ul style="margin-top: 40px;">
+            <a href="#" class="home" onclick="menu()" ><div class="circle active" id="btn1"><img src="../imagens/home.png" alt="home" class="itens" ></div><span id="txt1">Home</span></a>
+            <a href="#" class="home" onclick="recursos()" ><div class="circle" id="btn2"><img src="../imagens/recursos.png" alt="recursos" class="itens" ></div><span id="txt2">Recursos</span></a>
+            <a href="#" class="home" onclick="carteira()"><div class="circle" id="btn3"><img src="../imagens/carteira.png" alt="Carteira" class="itens"  ></div><span id="txt3">Carteira</span></a>
+            <a href="#" class="home" onclick="mensagem()"><div class="circle" id="btn4"><img src="../imagens/chat.png" alt="Mensagem" class="itens"></div><span id="txt4">Mensagem</span></a>
+            <a href="#" class="home" onclick="ajustes()"><div class="circle" id="btn5"><img src="../imagens/configs.png" alt="Ajustes" class="itens" ></div><span id="txt5">Ajustes</span></a>
+
+
+        </ul>
+    </div>
+    <div class="background"  >
+        <div class="bola rotate size position" style="background-color: #F68721 ;margin-left: 250px;"><div class="InCircle" style="background-color: #FFBB36;"></div></div>
+        <div class="bola rotate2 size2 position3" style="background-color: #5B58F3; margin-left: 80px;"></div>
+        <div class="bola rotate3 size3 position4" style="background-color: #F68721"><div class="InCircle" style="background-color: #FFEC86"></div></div>
+        <div class="bola rotate4 size4 position5" style="background-color: rgb(255, 136, 0);"><div class="InCircle" style="background-color: #FFE457"></div></div>
+        <div class="bola rotate3 size5 position6" style="background-color: #F64721;"></div>
+    
+    <div class="content" style="z-index: 1;">
+    <div class="moldura" id="página-home">
+
+
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-1">
+                1 of 3
+              </div>
+              <div class="col-6 coluna" style="margin-top: 20px;">
+                <h1 class="Saldações">Olá <div id="Usuario">usuário</div>, bem vindo de volta!</h1>
+                <h1 class="MinhaCarteira">Minha Carteira</h1>
+
+
+    <div class="cards" style="z-index: 1;">
+       
+    <div class="card margem1 " id="card">
+        <h2 class="TituloCard">Saldo:</h2>
+        <div class="centralizar sumir" id="saldo">R$00.00</div>
+        <div class="bar sumir" id="bar1"></div>
+        <div class="barra-lateral frente" onclick="Esconder()"></div>
+        <div class="barra-lateral fundo"></div>
+    </div>
+
+
+    <div class="card margem" id="card2">
+        <h2 class="TituloCard">Limite:</h2>
+        <div class="centralizar sumir2" id="limite">R$00.00</div>
+        <div class="bar sumir2" id="bar2"></div>
+        <div class="barra-lateral frente" onclick="Esconder2()"></div>
+        <div class="barra-lateral fundo"></div>
+    </div>
+    </div>
+
+
+
+    <!--Somente para testes,não estará no projeto-->
+    <input name="valorinput" type="number" class="valor" id="valorSaldo" placeholder="saldo"oninput="atualizarSaldo()">
+    <input name="valorinput"type="number" class="valor" id="valorlimite" placeholder="limite"oninput="atualizarLimite()">
+    <input type="text" id="NomeUsuario" oninput="atualizarNome()" placeholder="nome">
+
+              </div>
+              <div class="col-1">
+              </div>
+            </div>
+            
+          </div>
+    </div>
+    <div class="moldura" id="página-recursos" >
+        <div class="infousuario">
+            <div class="fundoinfouser"></div>
+            <img alt="" src="../imagens/ftusuario.jpg" class="fotousuario"/>
+            <div class="nomeusuario">Eduardo Andrade</div>
+        </div>
+        <div class="titulo">Recursos</div>
+        <div class="topicos">
+            <div class="titulo-opcoes-container">
+                <div class="tituloopcoes">PIX E TRANSFERÊNCIAS</div>
+                <div class="topicos">
+                    <div class="coluna">
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Fazer um Pix</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Pix Copia e Cola</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Extrato Pix</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Minhas Cobranças</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Comprovantes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="titulo-opcoes-container">
+                <div class="tituloopcoes">PAGAMENTOS E RECARGAS</div>
+                <div class="topicos">
+                    <div class="coluna">
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Pagamentos com codigos de Barra</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">2° via de boletos</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Recarga de telefone pré pago</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Boletos Eletronicos</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Pagar fatura do cartao</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="titulo-opcoes-container">
+                <div class="tituloopcoes">INVESTIMENTOS E POUPANÇA</div>
+                <div class="topicos">
+                    <div class="coluna">
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Meus investimentos</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Poupanca</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Renda fixa (CDB/LCI/LCA)</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Previdencia</a>
+                        </div>
+                        <div class="fundoopcao">
+                            <a href="../HTML/embreve.html" class="textoopcao">Fundos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="moldura" id="página-carteira" >
+        
+    </div>
+    <div class="moldura" id="página-mensagens" >
+        <div class="titulo">Fale conosco</div>
+        <iframe id="landbot-chat" src="https://landbot.online/v3/H-1777820-08PRA5QCKXM6GLHH/index.html" ></iframe>
+     </div>
+    <div class="moldura" id="página-ajustes" >
+        
+    </div>
+    </div>
+    
+    <div class="moldura" id="página-mensagens" style="z-index: 1;">
+        <div class="titulo">Fale conosco</div>
+        <iframe id="landbot-chat" src="https://landbot.online/v3/H-1777820-08PRA5QCKXM6GLHH/index.html" ></iframe>
+</div>
+
+    </div>
+</body>
+<script src="/JS/card.js"></script>
+<script src="/JS/páginas.js"></script>
+<script type="module" src="/JS/estilo.js"></script>
+</body>
+</html>
