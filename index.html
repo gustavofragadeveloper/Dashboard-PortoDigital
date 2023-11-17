@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Pesquisa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #searchBar {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+        }
+
+        #suggestions {
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            display: none;
+        }
+
+        .suggestion-item {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        #searchResults {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .result-item {
+            margin-bottom: 10px;
+        }
+
+        .result-item strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Barra de Pesquisa</h1>
+        <input type="text" id="searchBar" placeholder="Pesquisar por depósitos, últimas transações, Tags, Nome ou Número de Conta...">
+        <div id="suggestions"></div>
+    </header>
+    <div id="searchResults">
+        <!-- Resultados da pesquisa serão exibidos aqui -->
+    </div>
+
+    <!-- Outros elementos da sua página aqui -->
+
+    <script>
+        const searchBar = document.getElementById('searchBar');
+        const suggestionsContainer = document.getElementById('suggestions');
+        const searchResultsContainer = document.getElementById('searchResults');
+
+        searchBar.addEventListener('input', function() {
+            const searchTerm = searchBar.value.toLowerCase();
+            suggestionsContainer.innerHTML = ''; // Limpa as sugestões anteriores
+
+            // Verifica o termo de pesquisa e exibe sugestões correspondentes
+            if (searchTerm.length > 0) {
+                showSuggestions([
+                    'Depósitos',
+                    'Últimas Transações',
+                    'Pesquisa por Tags ou Categorias',
+                    'Pesquisa por Nome ou Número de Conta'
+                ].filter(option => option.toLowerCase().includes(searchTerm)));
+            } else {
+                hideSuggestions();
+            }
+        });
+
+        searchBar.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                const searchTerm = searchBar.value.toLowerCase();
+                searchResultsContainer.innerHTML = ''; // Limpa os resultados anteriores
+
+                // Verifica o termo de pesquisa e executa a ação correspondente
+                if (searchTerm.includes('depósitos')) {
+                    displaySearchResult('Depósitos', 'Exibe informações sobre depósitos.');
+                } else if (searchTerm.includes('últimas transações')) {
+                    displaySearchResult('Últimas Transações', 'Mostra as últimas transações.');
+                } else if (searchTerm.includes('pesquisa por tags') || searchTerm.includes('pesquisa por categorias')) {
+                    displaySearchResult('Pesquisa por Tags ou Categorias', 'Permite pesquisar transações por Tags ou Categorias.');
+                } else if (searchTerm.includes('pesquisa por nome') || searchTerm.includes('pesquisa por número de conta')) {
+                    displaySearchResult('Pesquisa por Nome ou Número de Conta', 'Encontra transações pelo nome ou número de conta.');
+                } else {
+                    displaySearchResult('Termo não reconhecido', 'Por favor, refine sua pesquisa.');
+                }
+
+                hideSuggestions();
+            }
+        });
+
+        function showSuggestions(suggestions) {
+            suggestions.forEach(suggestion => {
+                const suggestionItem = document.createElement('div');
+                suggestionItem.classList.add('suggestion-item');
+                suggestionItem.textContent = suggestion;
+                suggestionItem.addEventListener('click', function() {
+                    searchBar.value = suggestion;
+                    hideSuggestions();
+                });
+                suggestionsContainer.appendChild(suggestionItem);
+            });
+
+            suggestionsContainer.style.display = 'block';
+        }
+
+        function hideSuggestions() {
+            suggestionsContainer.style.display = 'none';
+        }
+
+        function displaySearchResult(title, description) {
+            const resultItem = document.createElement('div');
+            resultItem.classList.add('result-item');
+            resultItem.innerHTML = `<strong>${title}</strong><p>${description}</p>`;
+            searchResultsContainer.appendChild(resultItem);
+        }
+    </script>
+</body>
+</html>
