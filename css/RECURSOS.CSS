@@ -175,3 +175,51 @@ body {
     margin-left: 288px;
 }
 
+@media only screen and (min-width: 1366px) and (max-width: 1370px) {
+
+    .titulo {
+        text-align: left;
+        padding-left: 300px;
+        color: #303030;
+        font-size: 30px;
+        font-family: 'Manrope';
+        font-weight: 700;
+        margin-top: -90px;
+    }
+    .tituloopcoes{
+        font-family: 'Manrope';
+        font-size: 15px;
+        text-align: center;
+        color: #303030;
+        font-weight: 400;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .textoopcao {
+        text-decoration: none;
+        text-align: justify;
+        color: #303030;
+        font-size: 17px;
+        font-family: 'Manrope';
+        font-weight: 600;
+    }
+    .fundoopcao {
+        background-color: #f2f2f2;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        text-align: center;
+        width: 150px;
+        height: 35px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .infousuario {
+        height: 60px;
+        left: 80%;
+        top: 25px;
+        position: absolute;
+        padding-right: 15px;
+}
+}
