@@ -121,7 +121,10 @@ body {
     font-weight: 700;
     word-wrap: break-word;
 }
-
+iframe{
+    width: 80%;
+    height: 600px;
+}
 #landbot-chat {
     padding-bottom: 2%;
     position: absolute;
@@ -130,3 +133,17 @@ body {
 }
 
 
+@media only screen and (min-width: 1366px) and (max-width: 1370px) {
+    iframe{
+        width: 70%;
+        height: 450px;
+    }
+
+    .infousuario {
+        height: 60px;
+        left: 80%;
+        top: 1px;
+        position: absolute;
+        padding-right: 15px;
+    }
+}
