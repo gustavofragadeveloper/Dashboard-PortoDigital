@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
     textEmail.textContent = "";
     textPassword.textContent = "";
 
-    window.location.href = 'teste.html';
+    window.location.href = 'dashboard.html';
   } else {
     console.log("Requisição não atendida");
   }

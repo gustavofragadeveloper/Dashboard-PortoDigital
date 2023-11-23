@@ -89,5 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         alert("Cadastro concluído!");
+        window.location.href = 'login.html';
     });
 });
