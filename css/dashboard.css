@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap');
        body{
               background-color: #DEDDE5;
-              overflow: hidden;
+              
         }
         .content{
             width: 100%;
@@ -127,10 +127,6 @@
            width: 400px;
         }
 
-        .circle-home img {
-            
-        }
-
         .home-recursos img{
             margin-left: 2px;
         }
@@ -141,7 +137,7 @@
         .moldura{
             display: block;
             margin-top: 20px;
-            height: 90vh;
+            height: max-content;
             width: 204vh;
             border-radius: 18px;
             background-color: #f1f2f3f3;
@@ -163,4 +159,28 @@
         #página-ajustes{
             display: none;
         }
+
+        .retangulo {
+            width: 300px;
+            height: 80px;
+            background-color: #f7f7f7;
+            margin-top: 555px;
+            border-radius: 16px;
+            box-shadow: 4px 4px 4px 0px rgba(173, 127, 211, 0.226);
+            text-align: center;
+            line-height: 65px;
+            margin: 10px;
+            display: inline-block;
+            font-family: 'Manrope', sans-serif;
+            font-weight:bold;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .coluna{
+            float: left;
+            width: 250px;
+            padding-right: 30px;
+        }
+
+        
 

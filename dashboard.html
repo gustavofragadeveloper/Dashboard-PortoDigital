@@ -66,12 +66,26 @@
     </div>
 
 
-
     <!--Somente para testes,não estará no projeto-->
     <input name="valorinput" type="number" class="valor" id="valorSaldo" placeholder="saldo"oninput="atualizarSaldo()">
     <input name="valorinput"type="number" class="valor" id="valorlimite" placeholder="limite"oninput="atualizarLimite()">
     <input type="text" id="NomeUsuario" oninput="atualizarNome()" placeholder="nome">
 
+    
+    <div>
+        <h2> Últimas transações</h2>
+      
+        <div class="coluna">
+            <div class="retangulo" onclick="redirectToPage()">Ceconsud R$105,10</div>
+            <div class="retangulo" onclick="redirectToPage()">Uber R$14,21</div>
+            <div class="retangulo" onclick="redirectToPage()">MagazineLuiza R$65,29</div>
+        </div>
+        <div class="coluna">
+            <div class="retangulo" onclick="redirectToPage()">Spotify R$11,90</div>
+            <div class="retangulo" onclick="redirectToPage()">Ifood R$23,65</div>
+            <div class="retangulo" onclick="redirectToPage()">AMAZON R$78,56</div>
+        </div>
+    </div>
               </div>
               <div class="col-1">
               </div>
@@ -79,6 +93,9 @@
             
           </div>
     </div>
+
+
+    
     <div class="moldura" id="página-recursos" >
         <div class="infousuario">
             <div class="fundoinfouser"></div>
